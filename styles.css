@@ -1015,3 +1015,16 @@ footer {
     animation: none !important;
   }
 }
+
+/* Refined analytics scale */
+.stats-grid strong,
+.stat-card strong,
+.metric-card strong {
+  font-size: clamp(3rem, 5.2vw, 5.2rem);
+  line-height: .95;
+}
+
+/* Final polish */
+footer {
+  display: none !important;
+}
