@@ -1030,16 +1030,38 @@ footer {
 }
 
 
-.social-contact-card strong {
+/* Compact social links — approved option 3 */
+.social-contact-card .social-links {
   display: flex;
   flex-direction: column;
-  gap: 4px;
+  gap: 16px;
+  margin-top: 18px;
 }
 
-.social-contact-card strong a {
+.social-contact-card .social-links a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
   width: fit-content;
+  color: inherit;
+  text-decoration: none;
 }
 
-.social-contact-card strong a:hover {
-  color: var(--pink-soft);
+.social-contact-card .social-links i {
+  width: 24px;
+  flex: 0 0 24px;
+  font-size: 1.35rem;
+  font-style: normal;
+  line-height: 1;
+  text-align: center;
+}
+
+.social-contact-card .social-links strong {
+  font-size: clamp(1.45rem, 2vw, 2rem);
+  line-height: 1.05;
+}
+
+.social-contact-card .social-links a:hover strong {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }
